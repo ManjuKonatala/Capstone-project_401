@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dashboard</title>
+  <link rel="stylesheet" href="/public/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+  <div class="logo">
+    <h1>Novel World</h1>
+  </div>
+  <nav>
+    <ul>
+      <% if (!isAuthenticated) { %>
+        <li><a href="/">Sign UP</a></li>
+        <li><a href="/login">Login</a></li>
+      <% } else { %>
+        <li><a href="/logout">Logout</a></li>
+      <% } %>
+    </ul>
+  </nav>
+  
+</header>
+<div class="hero">
+  <div class="hero-content">
+    <h1>Welcome To The Book World.</h1>
+  </div>
+  <div class="main-content">
+    <div class="books">
+      <div class="search">
+        <input type="text" placeholder="Search" id="search-box">
+        <button type="submit" id="search">Find Book</button>
+        <div id="list-output"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/public/sample.js"></script>
+</body>
+</html>

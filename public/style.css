@@ -1,0 +1,127 @@
+
+body{
+  background-image: linear-gradient(to right, #e1d4ea, #12e961, #fdeff9);
+  background-repeat: no-repeat;
+  background-size:contain;
+  overflow: visible; 
+  min-height:100vh;
+}
+header{
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding:20px 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: 10vh;
+}
+nav{
+  display: flex;
+  align-items: center;
+}
+nav ul{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+nav ul li{
+  margin-left:25px;
+  list-style:none;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+nav ul li a:hover{
+  color: rgb(11, 44, 230);
+}
+
+.hero{
+  padding: 70px 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.hero h1{
+  margin-bottom: 15px;
+  font-size: 40px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: rgb(8, 8, 8);
+}
+.main-content{
+  background-image: linear-gradient(rgb(156, 192, 213),rgb(0,0,0,0.45));
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search input{
+  border-radius: 50px;
+  height:40px;
+  width: 250px;
+  margin-top: 15px;
+  padding: 5px;  
+}
+.search button{
+  border-radius: 50px;
+  height:35px;
+  width:90px;
+  background-color: rgb(192, 140, 202);
+}
+.search button:hover{
+  box-shadow: 2px 4px rgb(43, 40, 40);
+}
+#list-output {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 900px; 
+  margin-top: 10px; 
+}
+
+.book-item {
+  width: calc(25% - 10px); 
+  margin-bottom: 20px;
+  border: 1px solid #5f4c4c;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.book-item:hover{
+  box-shadow: 10px 12px 4px rgba(7, 16, 100, 0.509);
+}
+.book-item img {
+  max-width: 100px; 
+  height: auto;
+  margin-right: 10px; 
+}
+.book-item title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+.book-item p{
+  font-size: 1.2rem;
+  margin: 0;
+}
+.book-item a {
+  background-color: #292e32;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  border-radius: 5px;
+  height: 10%;
+}

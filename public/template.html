@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('/public/dgdr.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .main{
+            background-color: rgb(27, 7, 7);
+            height: 250px;
+            width: 400px;
+            position: absolute;
+            right: 33%;
+            top: 30%;
+            border-radius: 15px;
+        }
+        .main:hover{
+            box-shadow: 5px 10px rgba(29, 24, 24, 0.212) ;
+            border: 2px solid white;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        .buttons{
+            display:flex;
+            justify-content: space-around;
+           height: 140px;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(8, 8, 8);
+        }
+        button{
+            border-radius: 3px;
+            background-color: rgb(79, 233, 244);
+            cursor: pointer;
+            height: 40px;
+            width: 75px;
+            border-radius: 3px;
+            font-weight: bold ;
+        }
+        button:hover{
+            border-radius: 10px;
+            box-shadow: 4px 4px rgb(45, 39, 39);
+        }
+        h1{
+            color: rgb(250, 251, 252);
+            font-size: 30px;
+            
+        }
+        h3{
+            color: rgb(251, 248, 248);
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="container">
+    <h1>Welcome to Book World </h1>
+    <div>
+        <h3>Please login or signup to read your favourite books.</h3>
+        <div class="buttons">
+        <div class='signup'><button><a href="/signup">SignUp</button></div>
+        <div class="login"><button><a href="/login">Login</button></div>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image:linear-gradient(rgb(42, 42, 175),rgb(17, 144, 183),rgb(163, 33, 206));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(2, 2, 2, 0.089); 
+    border-radius: 10px;
+    height: 400px;
+    width: 750px;
+    
+}
+.container:hover{
+    padding: 5px;
+    border: 3px solid black;
+}
+.form { 
+    padding:50px;
+    border-radius: 10px;
+    text-align: center; 
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+.form h1{
+    color: #fcf8f8;
+}
+.img{
+    width: 22rem;
+    height:25rem;
+    background-image: url('signup.jpg');
+    background-repeat: no-repeat;
+    background-size: 22rem 25rem;
+    border-radius: 5px;
+}
+.img2{
+    width: 22rem;
+    height:25rem;
+    background-image: url('login.jpg');
+    background-repeat: no-repeat;
+    background-size: 22rem 25rem;
+}
+
+.form input[type="text"], .form input[type="email"],.form input[type="password"], .form button {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form input:hover, .form button:hover{
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.388);
+    border:3px solid black;
+}
+.form label {
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+.form button {
+    background-color: #0ddeb1;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+a{
+    color:#2d25cc;
+    font-size: 20px;
+    padding-left: 35px;
+    text-decoration: none;
+    
+}
+h4{
+    color: #0d03d1;
+    font-size: larger;
+    text-align: center;
+}
